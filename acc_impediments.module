@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Access Impediments on entry into the country feature.
+ */
+
+include_once 'acc_impediments.features.inc';
