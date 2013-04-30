@@ -197,7 +197,7 @@ function acc_impediments_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -253,7 +253,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -409,7 +409,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -470,8 +470,8 @@ function acc_impediments_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-br_requirement_into_country-field_organization'
-  $field_instances['node-br_requirement_into_country-field_organization'] = array(
+  // Exported field_instance: 'node-br_requirement_into_country-field_responsible_actor'
+  $field_instances['node-br_requirement_into_country-field_responsible_actor'] = array(
     'bundle' => 'br_requirement_into_country',
     'default_value' => NULL,
     'deleted' => 0,
@@ -484,19 +484,7 @@ function acc_impediments_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
-      ),
-      'entityreference_view_widget' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -506,9 +494,9 @@ function acc_impediments_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_organization',
-    'label' => 'Submited To',
-    'required' => 1,
+    'field_name' => 'field_responsible_actor',
+    'label' => 'Submited to',
+    'required' => 0,
     'settings' => array(
       'behaviors' => array(
         'taxonomy-index' => array(
@@ -523,7 +511,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -573,7 +561,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -629,7 +617,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -678,7 +666,7 @@ function acc_impediments_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -775,7 +763,7 @@ function acc_impediments_field_default_field_instances() {
   t('Sector(s) affected');
   t('Status of Submission');
   t('Submited By');
-  t('Submited To');
+  t('Submited to');
   t('Title');
   t('Type of administrative procedure submitted');
   t('Value');
