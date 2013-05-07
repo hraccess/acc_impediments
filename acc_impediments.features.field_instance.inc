@@ -413,6 +413,51 @@ function acc_impediments_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-br_requirement_into_country-field_if_denied_delayed_by_whom'
+  $field_instances['node-br_requirement_into_country-field_if_denied_delayed_by_whom'] = array(
+    'bundle' => 'br_requirement_into_country',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 14,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_if_denied_delayed_by_whom',
+    'label' => 'Submited to',
+    'required' => 0,
+    'settings' => array(
+      'behaviors' => array(
+        'taxonomy-index' => array(
+          'status' => TRUE,
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-br_requirement_into_country-field_incident_type_impediment'
   $field_instances['node-br_requirement_into_country-field_incident_type_impediment'] = array(
     'bundle' => 'br_requirement_into_country',
@@ -470,6 +515,43 @@ function acc_impediments_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-br_requirement_into_country-field_request_status'
+  $field_instances['node-br_requirement_into_country-field_request_status'] = array(
+    'bundle' => 'br_requirement_into_country',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_request_status',
+    'label' => 'Submission Status',
+    'required' => FALSE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-br_requirement_into_country-field_responsible_actor'
   $field_instances['node-br_requirement_into_country-field_responsible_actor'] = array(
     'bundle' => 'br_requirement_into_country',
@@ -495,7 +577,7 @@ function acc_impediments_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_responsible_actor',
-    'label' => 'Submited to',
+    'label' => 'If denied/delayed by whom',
     'required' => 0,
     'settings' => array(
       'behaviors' => array(
@@ -511,7 +593,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 7,
     ),
   );
 
@@ -565,62 +647,6 @@ function acc_impediments_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-br_requirement_into_country-field_status_of_request'
-  $field_instances['node-br_requirement_into_country-field_status_of_request'] = array(
-    'bundle' => 'br_requirement_into_country',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 2,
-      ),
-      'entityreference_view_widget' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_status_of_request',
-    'label' => 'Status of Submission',
-    'required' => 1,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-br_requirement_into_country-field_targetted_actor'
   $field_instances['node-br_requirement_into_country-field_targetted_actor'] = array(
     'bundle' => 'br_requirement_into_country',
@@ -666,7 +692,7 @@ function acc_impediments_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 5,
     ),
   );
 
@@ -759,9 +785,10 @@ function acc_impediments_field_default_field_instances() {
   t('Date of submition');
   t('Description');
   t('How many days did it take to get an answer (positive/negative)?');
+  t('If denied/delayed by whom');
   t('Impact');
   t('Sector(s) affected');
-  t('Status of Submission');
+  t('Submission Status');
   t('Submited By');
   t('Submited to');
   t('Title');
