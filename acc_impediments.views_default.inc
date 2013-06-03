@@ -96,7 +96,7 @@ function acc_impediments_views_default_views() {
     4 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -134,11 +134,6 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Description */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
@@ -150,6 +145,13 @@ function acc_impediments_views_default_views() {
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
+  );
+  /* Field: Content: Type of administrative procedure submitted */
+  $handler->display->display_options['fields']['field_incident_type_impediment']['id'] = 'field_incident_type_impediment';
+  $handler->display->display_options['fields']['field_incident_type_impediment']['table'] = 'field_data_field_incident_type_impediment';
+  $handler->display->display_options['fields']['field_incident_type_impediment']['field'] = 'field_incident_type_impediment';
+  $handler->display->display_options['fields']['field_incident_type_impediment']['settings'] = array(
+    'link' => 0,
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -186,7 +188,7 @@ function acc_impediments_views_default_views() {
     4 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -230,11 +232,6 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Description */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
@@ -246,6 +243,13 @@ function acc_impediments_views_default_views() {
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
+  );
+  /* Field: Content: Type of administrative procedure submitted */
+  $handler->display->display_options['fields']['field_incident_type_impediment']['id'] = 'field_incident_type_impediment';
+  $handler->display->display_options['fields']['field_incident_type_impediment']['table'] = 'field_data_field_incident_type_impediment';
+  $handler->display->display_options['fields']['field_incident_type_impediment']['field'] = 'field_incident_type_impediment';
+  $handler->display->display_options['fields']['field_incident_type_impediment']['settings'] = array(
+    'link' => 0,
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -282,7 +286,7 @@ function acc_impediments_views_default_views() {
     4 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -375,7 +379,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -465,7 +469,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -501,10 +505,10 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'visualization';
   $handler->display->display_options['style_options']['type'] = 'bar';
   $handler->display->display_options['style_options']['fields'] = array(
-    'field_sectors' => array(
+    'field_clusters' => array(
       'enabled' => 0,
     ),
-    'field_sectors_1' => array(
+    'field_clusters_1' => array(
       'enabled' => 1,
       'sort' => 'DESC',
     ),
@@ -513,7 +517,7 @@ function acc_impediments_views_default_views() {
     'title' => 'Number of incidents',
   );
   $handler->display->display_options['style_options']['xAxis'] = array(
-    'labelField' => 'field_sectors',
+    'labelField' => 'field_clusters',
     'invert' => 0,
   );
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -521,18 +525,19 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Sector(s) affected */
-  $handler->display->display_options['fields']['field_sectors']['id'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['table'] = 'field_data_field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['field'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['delta_offset'] = '0';
-  /* Field: Content: Sector(s) affected */
-  $handler->display->display_options['fields']['field_sectors_1']['id'] = 'field_sectors_1';
-  $handler->display->display_options['fields']['field_sectors_1']['table'] = 'field_data_field_sectors';
-  $handler->display->display_options['fields']['field_sectors_1']['field'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors_1']['group_type'] = 'count';
-  $handler->display->display_options['fields']['field_sectors_1']['label'] = 'Number of incidents';
-  $handler->display->display_options['fields']['field_sectors_1']['separator'] = ', ';
+  /* Field: Content: Clusters */
+  $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['label'] = 'Sectors/Clusters Affected';
+  $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
+  /* Field: Content: Clusters */
+  $handler->display->display_options['fields']['field_clusters_1']['id'] = 'field_clusters_1';
+  $handler->display->display_options['fields']['field_clusters_1']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['fields']['field_clusters_1']['field'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters_1']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_clusters_1']['label'] = 'Number of incidents';
+  $handler->display->display_options['fields']['field_clusters_1']['separator'] = ', ';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -551,7 +556,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -641,7 +646,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -730,7 +735,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -797,7 +802,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -901,7 +906,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -968,7 +973,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1037,18 +1042,19 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Sector(s) affected */
-  $handler->display->display_options['fields']['field_sectors']['id'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['table'] = 'field_data_field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['field'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['delta_offset'] = '0';
-  /* Field: Content: Sector(s) affected */
-  $handler->display->display_options['fields']['field_sectors_1']['id'] = 'field_sectors_1';
-  $handler->display->display_options['fields']['field_sectors_1']['table'] = 'field_data_field_sectors';
-  $handler->display->display_options['fields']['field_sectors_1']['field'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors_1']['group_type'] = 'count';
-  $handler->display->display_options['fields']['field_sectors_1']['label'] = 'Number of incidents';
-  $handler->display->display_options['fields']['field_sectors_1']['separator'] = ', ';
+  /* Field: Content: Clusters */
+  $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['label'] = 'Sectors/Clusters Affected';
+  $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
+  /* Field: Content: Clusters */
+  $handler->display->display_options['fields']['field_clusters_1']['id'] = 'field_clusters_1';
+  $handler->display->display_options['fields']['field_clusters_1']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['fields']['field_clusters_1']['field'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters_1']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_clusters_1']['label'] = 'Sectors/Clusters Affected';
+  $handler->display->display_options['fields']['field_clusters_1']['separator'] = ', ';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -1067,7 +1073,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1101,18 +1107,19 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['style_options']['filename'] = '%view_%display.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Sector(s) affected */
-  $handler->display->display_options['fields']['field_sectors']['id'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['table'] = 'field_data_field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['field'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors']['delta_offset'] = '0';
-  /* Field: Content: Sector(s) affected */
-  $handler->display->display_options['fields']['field_sectors_1']['id'] = 'field_sectors_1';
-  $handler->display->display_options['fields']['field_sectors_1']['table'] = 'field_data_field_sectors';
-  $handler->display->display_options['fields']['field_sectors_1']['field'] = 'field_sectors';
-  $handler->display->display_options['fields']['field_sectors_1']['group_type'] = 'count';
-  $handler->display->display_options['fields']['field_sectors_1']['label'] = 'Number of Incidents';
-  $handler->display->display_options['fields']['field_sectors_1']['separator'] = ', ';
+  /* Field: Content: Clusters */
+  $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters']['label'] = 'Sectors/Clusters';
+  $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
+  /* Field: Content: Clusters */
+  $handler->display->display_options['fields']['field_clusters_1']['id'] = 'field_clusters_1';
+  $handler->display->display_options['fields']['field_clusters_1']['table'] = 'field_data_field_clusters';
+  $handler->display->display_options['fields']['field_clusters_1']['field'] = 'field_clusters';
+  $handler->display->display_options['fields']['field_clusters_1']['group_type'] = 'count';
+  $handler->display->display_options['fields']['field_clusters_1']['label'] = 'Number of incidents';
+  $handler->display->display_options['fields']['field_clusters_1']['separator'] = ', ';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -1131,7 +1138,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1235,7 +1242,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1303,7 +1310,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1359,6 +1366,7 @@ function acc_impediments_views_default_views() {
     t('Date Between'),
     t(' Impediments on entry into country'),
     t('Impediments on entry into country'),
+    t('Type of administrative procedure submitted'),
     t('XLS'),
     t('Chart Impediments by incident type'),
     t('Impediments on entry into country by incident type'),
@@ -1370,7 +1378,7 @@ function acc_impediments_views_default_views() {
     t('Resposible Actor'),
     t('Chart Impediments by sectors'),
     t('Impediments by sectors'),
-    t('Sector(s) affected'),
+    t('Sectors/Clusters Affected'),
     t('Chart Impediments by affected organization'),
     t('Impediments by affected organization'),
     t('Affected Ogranization'),
@@ -1380,6 +1388,7 @@ function acc_impediments_views_default_views() {
     t('XLS Impediments by Responsible Actor'),
     t('Responsible Actor'),
     t('XLS Impediments by sectors affected'),
+    t('Sectors/Clusters'),
     t('XLS Impediments by affected org'),
     t('Affected Organizations'),
   );
