@@ -377,7 +377,7 @@ function acc_impediments_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_date',
-    'label' => 'Date of submition',
+    'label' => 'Date of submission',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -391,12 +391,10 @@ function acc_impediments_field_default_field_instances() {
       'active' => 1,
       'module' => 'date',
       'settings' => array(
-        'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'j M Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
-        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -574,6 +572,73 @@ function acc_impediments_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-br_requirement_into_country-field_nationality_of_applicant'
+  $field_instances['node-br_requirement_into_country-field_nationality_of_applicant'] = array(
+    'bundle' => 'br_requirement_into_country',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_nationality_of_applicant',
+    'label' => 'Nationality of applicant',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+          'simple' => 'simple',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+            'simple' => array(
+              'weight' => 0,
+            ),
+          ),
+        ),
+      ),
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-br_requirement_into_country-field_request_status'
   $field_instances['node-br_requirement_into_country-field_request_status'] = array(
     'bundle' => 'br_requirement_into_country',
@@ -607,7 +672,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -652,7 +717,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -792,11 +857,12 @@ function acc_impediments_field_default_field_instances() {
   t('A field replacing node title.');
   t('Access Constraint');
   t('Clusters');
-  t('Date of submition');
+  t('Date of submission');
   t('Description');
   t('How many days did it take to get answer (positive/negative)?');
   t('If denied/delayed by whom');
   t('Impact');
+  t('Nationality of applicant');
   t('Submission Status');
   t('Submited By');
   t('Submited to');
