@@ -45,7 +45,7 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -67,7 +67,7 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Sector(s)/Cluster(s) affected (field_clusters) */
+  /* Contextual filter: Field: Clusters (field_clusters) */
   $handler->display->display_options['arguments']['field_clusters_tid']['id'] = 'field_clusters_tid';
   $handler->display->display_options['arguments']['field_clusters_tid']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['arguments']['field_clusters_tid']['field'] = 'field_clusters_tid';
@@ -211,13 +211,12 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['fields']['field_responsible_actor']['settings'] = array(
     'link' => 0,
   );
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
-  $handler->display->display_options['fields']['field_clusters']['label'] = 'Clusters';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
-  /* Field: Content: Description */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -254,7 +253,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Title (title_field) */
+  /* Filter criterion: Field: Title (title_field) */
   $handler->display->display_options['filters']['title_field_value']['id'] = 'title_field_value';
   $handler->display->display_options['filters']['title_field_value']['table'] = 'field_data_title_field';
   $handler->display->display_options['filters']['title_field_value']['field'] = 'title_field_value';
@@ -455,13 +454,13 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['label'] = 'Sectors/Clusters Affected';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters_1']['id'] = 'field_clusters_1';
   $handler->display->display_options['fields']['field_clusters_1']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters_1']['field'] = 'field_clusters';
@@ -871,13 +870,13 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['label'] = 'Sectors/Clusters Affected';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters_1']['id'] = 'field_clusters_1';
   $handler->display->display_options['fields']['field_clusters_1']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters_1']['field'] = 'field_clusters';
@@ -917,13 +916,13 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['style_options']['filename'] = '%view_%display.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters']['id'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters']['field'] = 'field_clusters';
   $handler->display->display_options['fields']['field_clusters']['label'] = 'Sectors/Clusters';
   $handler->display->display_options['fields']['field_clusters']['delta_offset'] = '0';
-  /* Field: Content: Sector(s)/Cluster(s) affected */
+  /* Field: Field: Clusters */
   $handler->display->display_options['fields']['field_clusters_1']['id'] = 'field_clusters_1';
   $handler->display->display_options['fields']['field_clusters_1']['table'] = 'field_data_field_clusters';
   $handler->display->display_options['fields']['field_clusters_1']['field'] = 'field_clusters';
@@ -1175,7 +1174,7 @@ function acc_impediments_views_default_views() {
     t('last »'),
     t('Taxonomy term entity referenced from field_responsible_actor'),
     t('Title'),
-    t('Description'),
+    t('Body'),
     t('Date'),
     t('All'),
     t(' Impediments on entry into country'),

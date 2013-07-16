@@ -19,7 +19,7 @@ function acc_impediments_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'dashboard/factsheet-impediments-entry' => 'dashboard/factsheet-impediments-entry',
+        'access/dashboard/factsheet-impediments-entry' => 'access/dashboard/factsheet-impediments-entry',
       ),
     ),
   );

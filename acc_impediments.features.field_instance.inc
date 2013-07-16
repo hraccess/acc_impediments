@@ -58,7 +58,9 @@ function acc_impediments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
       'weight' => 0,
     ),
@@ -237,7 +239,9 @@ function acc_impediments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
       'weight' => 1,
     ),
@@ -352,6 +356,7 @@ function acc_impediments_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -391,10 +396,12 @@ function acc_impediments_field_default_field_instances() {
       'active' => 1,
       'module' => 'date',
       'settings' => array(
+        'display_all_day' => 0,
         'increment' => 15,
         'input_format' => 'j M Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -509,7 +516,9 @@ function acc_impediments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
       'weight' => 4,
     ),
@@ -566,7 +575,9 @@ function acc_impediments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
       'weight' => 3,
     ),
@@ -670,7 +681,9 @@ function acc_impediments_field_default_field_instances() {
     ),
     'widget' => array(
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
       'weight' => 7,
     ),
@@ -715,7 +728,9 @@ function acc_impediments_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => 0,
+      ),
       'type' => 'options_select',
       'weight' => 8,
     ),
