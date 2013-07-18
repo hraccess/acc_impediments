@@ -50,7 +50,7 @@ function acc_impediments_field_default_field_bases() {
         'view' => array(
           'args' => array(),
           'display_name' => 'entityreference_2',
-          'view_name' => 'impact',
+          'view_name' => 'acc_impacts',
         ),
       ),
       'target_type' => 'taxonomy_term',
