@@ -11,7 +11,7 @@ function acc_impediments_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'br_reqs_into_the_country';
+  $view->name = 'acc_impediments_onentry';
   $view->description = '';
   $view->tag = 'Access';
   $view->base_table = 'node';
@@ -1156,7 +1156,7 @@ function acc_impediments_views_default_views() {
     'block_7' => 0,
   );
   $handler->display->display_options['sitename_title'] = 0;
-  $translatables['br_reqs_into_the_country'] = array(
+  $translatables['acc_impediments_onentry'] = array(
     t('Master'),
     t('XLS Impediments by incident type'),
     t('more'),
@@ -1217,7 +1217,7 @@ function acc_impediments_views_default_views() {
     t('XLS Impediments by affected org'),
     t('Affected Organizations'),
   );
-  $export['br_reqs_into_the_country'] = $view;
+  $export['acc_impediments_onentry'] = $view;
 
   return $export;
 }
