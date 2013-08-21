@@ -11,7 +11,7 @@ function acc_impediments_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'acc_impediments_onentry';
+  $view->name = 'acc_impediments_on_entry';
   $view->description = '';
   $view->tag = 'Access';
   $view->base_table = 'node';
