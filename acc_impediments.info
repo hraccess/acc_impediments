@@ -1,4 +1,4 @@
-cname = Access Impediments on entry into the country
+name = Access Impediments on entry into the country
 description = Provide the Content Type and Views for Impediments on entry into the country
 core = 7.x
 package = Humanitarian Access
