@@ -2,7 +2,6 @@ name = Access Impediments on entry into the country
 description = Provide the Content Type and Views for Impediments on entry into the country
 core = 7.x
 package = Humanitarian Access
-php = 5.2.4
 features[context][] = acc_impediments
 features[ctools][] = context:context:3
 features[ctools][] = strongarm:strongarm:1

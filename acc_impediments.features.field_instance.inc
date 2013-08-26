@@ -344,6 +344,7 @@ function acc_impediments_field_default_field_instances() {
   // Exported field_instance: 'node-br_requirement_into_country-field_date'
   $field_instances['node-br_requirement_into_country-field_date'] = array(
     'bundle' => 'br_requirement_into_country',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -405,7 +406,7 @@ function acc_impediments_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_popup',
+      'type' => 'date_select',
       'weight' => 2,
     ),
   );
