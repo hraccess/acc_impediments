@@ -26,51 +26,51 @@ function acc_impediments_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-91fc51277a38e44936ed22b162ff64ef' => array(
+        'views-45d6a939d2d9028483f523a444b262eb' => array(
           'module' => 'views',
-          'delta' => '91fc51277a38e44936ed22b162ff64ef',
+          'delta' => '45d6a939d2d9028483f523a444b262eb',
           'region' => 'content',
           'weight' => '-10',
         ),
-        'views-c41a848174417426422f963fdda81a74' => array(
+        'views-608198074dc7d04f78b60122afb76021' => array(
           'module' => 'views',
-          'delta' => 'c41a848174417426422f963fdda81a74',
+          'delta' => '608198074dc7d04f78b60122afb76021',
           'region' => 'content',
           'weight' => '-9',
         ),
-        'views-becf862507558f28646bfd62393de8d5' => array(
+        'views-1f1ed61d885b26e0b55537bb0b0a16cf' => array(
           'module' => 'views',
-          'delta' => 'becf862507558f28646bfd62393de8d5',
+          'delta' => '1f1ed61d885b26e0b55537bb0b0a16cf',
           'region' => 'content',
           'weight' => '-8',
         ),
-        'views-f8a6c432535c4aac4725ef285e65a743' => array(
+        'views-ec157c4c33252fc9c7df9581f33a3322' => array(
           'module' => 'views',
-          'delta' => 'f8a6c432535c4aac4725ef285e65a743',
+          'delta' => 'ec157c4c33252fc9c7df9581f33a3322',
           'region' => 'content',
           'weight' => '-7',
         ),
-        'views-7a501f49c6f4c53582c9bdd91522be59' => array(
+        'views-fcd7a37bdfe146422d36642642434c40' => array(
           'module' => 'views',
-          'delta' => '7a501f49c6f4c53582c9bdd91522be59',
+          'delta' => 'fcd7a37bdfe146422d36642642434c40',
           'region' => 'content',
           'weight' => '-6',
         ),
-        'views-741ac8f18b4e03a52de0bb0df4cc25ce' => array(
+        'views-199f9213d51735002e952a26d595ff96' => array(
           'module' => 'views',
-          'delta' => '741ac8f18b4e03a52de0bb0df4cc25ce',
+          'delta' => '199f9213d51735002e952a26d595ff96',
           'region' => 'content',
           'weight' => '-5',
         ),
-        'views-63bde3a4ccf3517f5c534fe53121f201' => array(
+        'views-6a73904a7c7d755b8e17d35d2dc8512a' => array(
           'module' => 'views',
-          'delta' => '63bde3a4ccf3517f5c534fe53121f201',
+          'delta' => '6a73904a7c7d755b8e17d35d2dc8512a',
           'region' => 'content',
           'weight' => '-4',
         ),
-        'views-c9d7775e549e246111920c522c087f05' => array(
+        'views-e3763ffbafa63de226d6aa97c702ea0a' => array(
           'module' => 'views',
-          'delta' => 'c9d7775e549e246111920c522c087f05',
+          'delta' => 'e3763ffbafa63de226d6aa97c702ea0a',
           'region' => 'content',
           'weight' => '-3',
         ),
