@@ -504,7 +504,7 @@ function acc_impediments_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_if_denied_delayed_by_whom',
-    'label' => 'Submited to',
+    'label' => 'Submitted to',
     'required' => 0,
     'settings' => array(
       'behaviors' => array(
@@ -763,7 +763,7 @@ function acc_impediments_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_targetted_actor',
-    'label' => 'Submited By',
+    'label' => 'Submitted By',
     'required' => 1,
     'settings' => array(
       'behaviors' => array(
@@ -881,8 +881,8 @@ function acc_impediments_field_default_field_instances() {
   t('Impact');
   t('Nationality of applicant');
   t('Submission Status');
-  t('Submited By');
-  t('Submited to');
+  t('Submitted By');
+  t('Submitted to');
   t('Title');
   t('Type of administrative procedure submitted');
   t('Value');

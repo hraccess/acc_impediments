@@ -67,6 +67,15 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Contextual filter: Content: Type of administrative procedure submitted (field_incident_type_impediment) */
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['id'] = 'field_incident_type_impediment_target_id';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['table'] = 'field_data_field_incident_type_impediment';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['field'] = 'field_incident_type_impediment_target_id';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['default_argument_type'] = 'global_filter_field';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_incident_type_impediment_target_id']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -167,7 +176,7 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['fields']['field_incident_type_impediment']['settings'] = array(
     'link' => 0,
   );
-  /* Field: Content: Administrative request submited by */
+  /* Field: Content: Administrative request submitted by */
   $handler->display->display_options['fields']['field_targetted_actor']['id'] = 'field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor']['field'] = 'field_targetted_actor';
@@ -176,7 +185,7 @@ function acc_impediments_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_targetted_actor']['delta_offset'] = '0';
-  /* Field: Content: Submited to */
+  /* Field: Content: Submitted to */
   $handler->display->display_options['fields']['field_if_denied_delayed_by_whom']['id'] = 'field_if_denied_delayed_by_whom';
   $handler->display->display_options['fields']['field_if_denied_delayed_by_whom']['table'] = 'field_data_field_if_denied_delayed_by_whom';
   $handler->display->display_options['fields']['field_if_denied_delayed_by_whom']['field'] = 'field_if_denied_delayed_by_whom';
@@ -515,7 +524,7 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['relationships']['field_targetted_actor_target_id']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['relationships']['field_targetted_actor_target_id']['field'] = 'field_targetted_actor_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Administrative request submited by */
+  /* Field: Content: Administrative request submitted by */
   $handler->display->display_options['fields']['field_targetted_actor_1']['id'] = 'field_targetted_actor_1';
   $handler->display->display_options['fields']['field_targetted_actor_1']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor_1']['field'] = 'field_targetted_actor';
@@ -933,7 +942,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1006,7 +1015,7 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['relationships']['field_targetted_actor_target_id']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['relationships']['field_targetted_actor_target_id']['field'] = 'field_targetted_actor_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Administrative request submited by */
+  /* Field: Content: Administrative request submitted by */
   $handler->display->display_options['fields']['field_targetted_actor']['id'] = 'field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor']['field'] = 'field_targetted_actor';
@@ -1015,7 +1024,7 @@ function acc_impediments_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_targetted_actor']['delta_offset'] = '0';
-  /* Field: Content: Administrative request submited by */
+  /* Field: Content: Administrative request submitted by */
   $handler->display->display_options['fields']['field_targetted_actor_1']['id'] = 'field_targetted_actor_1';
   $handler->display->display_options['fields']['field_targetted_actor_1']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor_1']['field'] = 'field_targetted_actor';
@@ -1066,7 +1075,7 @@ function acc_impediments_views_default_views() {
   $handler->display->display_options['relationships']['field_targetted_actor_target_id']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['relationships']['field_targetted_actor_target_id']['field'] = 'field_targetted_actor_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Administrative request submited by */
+  /* Field: Content: Administrative request submitted by */
   $handler->display->display_options['fields']['field_targetted_actor']['id'] = 'field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor']['field'] = 'field_targetted_actor';
@@ -1075,7 +1084,7 @@ function acc_impediments_views_default_views() {
     'link' => 0,
   );
   $handler->display->display_options['fields']['field_targetted_actor']['delta_offset'] = '0';
-  /* Field: Content: Administrative request submited by */
+  /* Field: Content: Administrative request submitted by */
   $handler->display->display_options['fields']['field_targetted_actor_1']['id'] = 'field_targetted_actor_1';
   $handler->display->display_options['fields']['field_targetted_actor_1']['table'] = 'field_data_field_targetted_actor';
   $handler->display->display_options['fields']['field_targetted_actor_1']['field'] = 'field_targetted_actor';
@@ -1106,7 +1115,7 @@ function acc_impediments_views_default_views() {
     'br_requirement_into_country' => 'br_requirement_into_country',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Date (field_date) */
+  /* Filter criterion: Content: Date -  start date (field_date) */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -1158,13 +1167,14 @@ function acc_impediments_views_default_views() {
     t('Title'),
     t('Description'),
     t('Date'),
+    t('All'),
     t(' Impediments on entry into country'),
     t('Impediments on entry into country'),
     t('Type of administrative procedure submitted'),
     t('XLS'),
     t('Access Constraint'),
     t('Submited by'),
-    t('Submited to'),
+    t('Submitted to'),
     t('Submission Status'),
     t('If denied/delayed, by whom'),
     t('Clusters'),

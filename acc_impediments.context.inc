@@ -74,6 +74,30 @@ function acc_impediments_context_default_contexts() {
           'region' => 'content',
           'weight' => '-3',
         ),
+        'global_filter-global_filter_3' => array(
+          'module' => 'global_filter',
+          'delta' => 'global_filter_3',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+        'bean-filter-reset---incident-date' => array(
+          'module' => 'bean',
+          'delta' => 'filter-reset---incident-date',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+        'global_filter-global_filter_6' => array(
+          'module' => 'global_filter',
+          'delta' => 'global_filter_6',
+          'region' => 'sidebar_second',
+          'weight' => '-8',
+        ),
+        'bean-filter-reset---type-of-administr' => array(
+          'module' => 'bean',
+          'delta' => 'filter-reset---type-of-administr',
+          'region' => 'sidebar_second',
+          'weight' => '-7',
+        ),
       ),
     ),
   );

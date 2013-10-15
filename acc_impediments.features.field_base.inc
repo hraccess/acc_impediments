@@ -119,6 +119,9 @@ function acc_impediments_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_if_denied_delayed_by_whom',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'taxonomy_term_data' => array(
         'columns' => array(
@@ -149,6 +152,7 @@ function acc_impediments_field_default_field_bases() {
           'view_name' => 'acc_organizations_affected',
         ),
       ),
+      'profile2_private' => FALSE,
       'target_type' => 'taxonomy_term',
     ),
     'translatable' => 0,
