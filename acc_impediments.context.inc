@@ -26,53 +26,89 @@ function acc_impediments_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'views-45d6a939d2d9028483f523a444b262eb' => array(
+        'views-29db38da9a52596e4234fb460e058b19' => array(
           'module' => 'views',
-          'delta' => '45d6a939d2d9028483f523a444b262eb',
+          'delta' => '29db38da9a52596e4234fb460e058b19',
           'region' => 'content',
           'weight' => '-10',
         ),
-        'views-608198074dc7d04f78b60122afb76021' => array(
+        'views-d0f82fb657991bf00d7e24aaefd881bf' => array(
           'module' => 'views',
-          'delta' => '608198074dc7d04f78b60122afb76021',
+          'delta' => 'd0f82fb657991bf00d7e24aaefd881bf',
           'region' => 'content',
           'weight' => '-9',
         ),
-        'views-1f1ed61d885b26e0b55537bb0b0a16cf' => array(
+        'views-2f4c2e8a8f32365eaabf514773cc729d' => array(
           'module' => 'views',
-          'delta' => '1f1ed61d885b26e0b55537bb0b0a16cf',
+          'delta' => '2f4c2e8a8f32365eaabf514773cc729d',
           'region' => 'content',
           'weight' => '-8',
         ),
-        'views-ec157c4c33252fc9c7df9581f33a3322' => array(
+        'views-8fadadb3e39d66dc5200d8b1d9e6fbb1' => array(
           'module' => 'views',
-          'delta' => 'ec157c4c33252fc9c7df9581f33a3322',
+          'delta' => '8fadadb3e39d66dc5200d8b1d9e6fbb1',
           'region' => 'content',
           'weight' => '-7',
         ),
-        'views-fcd7a37bdfe146422d36642642434c40' => array(
+        'views-7b1f1fe1b194ba8a3438d660d163529c' => array(
           'module' => 'views',
-          'delta' => 'fcd7a37bdfe146422d36642642434c40',
+          'delta' => '7b1f1fe1b194ba8a3438d660d163529c',
           'region' => 'content',
           'weight' => '-6',
         ),
-        'views-199f9213d51735002e952a26d595ff96' => array(
+        'views-760e3e545a6230f68372fa35e56a9b59' => array(
           'module' => 'views',
-          'delta' => '199f9213d51735002e952a26d595ff96',
+          'delta' => '760e3e545a6230f68372fa35e56a9b59',
           'region' => 'content',
           'weight' => '-5',
         ),
-        'views-6a73904a7c7d755b8e17d35d2dc8512a' => array(
+        'views-f80d3ab23980cbaff7292aad41d476f0' => array(
           'module' => 'views',
-          'delta' => '6a73904a7c7d755b8e17d35d2dc8512a',
+          'delta' => 'f80d3ab23980cbaff7292aad41d476f0',
           'region' => 'content',
           'weight' => '-4',
         ),
-        'views-e3763ffbafa63de226d6aa97c702ea0a' => array(
+        'views-39fc19e3222ecfea2fee6d03a15d0f92' => array(
           'module' => 'views',
-          'delta' => 'e3763ffbafa63de226d6aa97c702ea0a',
+          'delta' => '39fc19e3222ecfea2fee6d03a15d0f92',
           'region' => 'content',
           'weight' => '-3',
+        ),
+        'views-f828a275687fb210b5aa01946ad28d24' => array(
+          'module' => 'views',
+          'delta' => 'f828a275687fb210b5aa01946ad28d24',
+          'region' => 'content',
+          'weight' => '-2',
+        ),
+        'views-d0cd3445cabfa2c1c9517b3197677bef' => array(
+          'module' => 'views',
+          'delta' => 'd0cd3445cabfa2c1c9517b3197677bef',
+          'region' => 'content',
+          'weight' => '-1',
+        ),
+        'views-45154b0e99f56544df68e69d7b8e58e8' => array(
+          'module' => 'views',
+          'delta' => '45154b0e99f56544df68e69d7b8e58e8',
+          'region' => 'content',
+          'weight' => '0',
+        ),
+        'views-eca7ea079544ae87e44f46f3fbc44ef7' => array(
+          'module' => 'views',
+          'delta' => 'eca7ea079544ae87e44f46f3fbc44ef7',
+          'region' => 'content',
+          'weight' => '1',
+        ),
+        'views-afaaeb9b5886659be7aa0572304c128c' => array(
+          'module' => 'views',
+          'delta' => 'afaaeb9b5886659be7aa0572304c128c',
+          'region' => 'content',
+          'weight' => '2',
+        ),
+        'views-026577e2a18902652769c8579b45ba67' => array(
+          'module' => 'views',
+          'delta' => '026577e2a18902652769c8579b45ba67',
+          'region' => 'content',
+          'weight' => '3',
         ),
         'global_filter-global_filter_3' => array(
           'module' => 'global_filter',

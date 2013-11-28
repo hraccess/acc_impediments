@@ -199,18 +199,58 @@ function acc_impediments_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 10,
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'node-br_requirement_into_country-field_acc_action_taken'
+  $field_instances['node-br_requirement_into_country-field_acc_action_taken'] = array(
+    'bundle' => 'br_requirement_into_country',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_acc_action_taken',
+    'label' => 'Action Taken Impediments on entry into country',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 13,
     ),
   );
 
   // Exported field_instance: 'node-br_requirement_into_country-field_access_constraint'
   $field_instances['node-br_requirement_into_country-field_access_constraint'] = array(
     'bundle' => 'br_requirement_into_country',
-    'default_value' => array(
-      0 => array(
-        'tid' => 41,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -219,7 +259,7 @@ function acc_impediments_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -244,6 +284,69 @@ function acc_impediments_field_default_field_instances() {
       ),
       'type' => 'options_select',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-br_requirement_into_country-field_attach_file'
+  $field_instances['node-br_requirement_into_country-field_attach_file'] = array(
+    'bundle' => 'br_requirement_into_country',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_attach_file',
+    'label' => 'Attach File',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'txt',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'filefield_sources' => array(
+          'filefield_sources' => array(
+            'attach' => 0,
+            'clipboard' => 0,
+            'reference' => 0,
+            'remote' => 0,
+            'upload' => 'upload',
+          ),
+          'source_attach' => array(
+            'absolute' => 0,
+            'attach_mode' => 'move',
+            'path' => 'file_attach',
+          ),
+          'source_imce' => array(
+            'imce_mode' => 0,
+          ),
+          'source_reference' => array(
+            'autocomplete' => 0,
+          ),
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 14,
     ),
   );
 
@@ -288,7 +391,7 @@ function acc_impediments_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_br_req_into_impact',
-    'label' => 'Impact',
+    'label' => 'Impact of impediment on entry into the country',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -299,7 +402,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -337,7 +440,7 @@ function acc_impediments_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -475,7 +578,7 @@ function acc_impediments_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 9,
     ),
   );
 
@@ -594,9 +697,9 @@ function acc_impediments_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'list_default',
         'weight' => 19,
       ),
       'teaser' => array(
@@ -611,43 +714,16 @@ function acc_impediments_field_default_field_instances() {
     'label' => 'Nationality of applicant',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-          'simple' => 'simple',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-            'simple' => array(
-              'weight' => 0,
-            ),
-          ),
-        ),
-      ),
       'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'options',
       'settings' => array(
-        'size' => 60,
+        'apply_chosen' => 0,
       ),
-      'type' => 'text_textfield',
+      'type' => 'options_select',
       'weight' => 6,
     ),
   );
@@ -873,12 +949,15 @@ function acc_impediments_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('A field replacing node title.');
   t('Access Constraint');
+  t('Action Taken Impediments on entry into country');
+  t('Attach File');
   t('Clusters');
   t('Date of submission');
   t('Description');
   t('How many days did it take to get answer (positive/negative)?');
   t('If denied/delayed by whom');
   t('Impact');
+  t('Impact of impediment on entry into the country');
   t('Nationality of applicant');
   t('Submission Status');
   t('Submitted By');
