@@ -250,7 +250,11 @@ function acc_impediments_field_default_field_instances() {
   // Exported field_instance: 'node-br_requirement_into_country-field_access_constraint'
   $field_instances['node-br_requirement_into_country-field_access_constraint'] = array(
     'bundle' => 'br_requirement_into_country',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'tid' => 81,
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -447,7 +451,7 @@ function acc_impediments_field_default_field_instances() {
   // Exported field_instance: 'node-br_requirement_into_country-field_date'
   $field_instances['node-br_requirement_into_country-field_date'] = array(
     'bundle' => 'br_requirement_into_country',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -510,7 +514,7 @@ function acc_impediments_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_select',
+      'type' => 'date_popup',
       'weight' => 2,
     ),
   );
